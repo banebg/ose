@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prirodni Med iz Pridvorice - Porodica Knežević</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4a261;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #264653;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .product img {
+            max-width: 200px;
+        }
+        .product-info {
+            max-width: 500px;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .images img {
+            max-width: 200px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prirodni Med iz Pridvorice</h1>
+        <p>Porodica Knežević - Tradicija i kvalitet iz srca Srbije</p>
+    </header>
+    <nav>
+        <a href="#about">O Nama</a>
+        <a href="#products">Proizvodi</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#order">Porudžbine</a>
+    </nav>
+    <div class="container" id="about">
+        <h2>O Nama</h2>
+        <p>Porodica Knežević iz sela Pridvorica u Srbiji generacijama proizvodi prirodni med po tradicionalnoj recepturi uz osvrte na sve moderne trendove pčelarstva. Naša ljubav prema pčelama i prirodi garantuje vrhunski kvalitet i ukus svakog teglica meda.</p>
+        <h3>O Pridvorici</h3>
+        <p>У насељу Придворица живи 115 пунолетних становника, а просечна старост становништва износи 57,6 година (53,9 код мушкараца и 61,2 код жена). У насељу има 63 домаћинства, а просечан број чланова по домаћинству је 1,97.</p>
+        <p>Ово насеље је у потпуности насељено Србима (према попису из 2002. године), а у последња три пописа, примећен је пад у броју становника.</p>
+        <div class="images">
+            <img src="med.jpg" alt="Tegla prirodnog meda">
+            <img src="srbija.jpg" alt="Mapa Srbije">
+            <img src="pcela.jpg" alt="Pčela na cvetu">
+        </div>
+    </div>
+    <div class="container" id="products">
+        <h2>Naši Proizvodi</h2>
+        <div class="product">
+            <img src="med.jpg" alt="Tegla prirodnog meda">
+            <div class="product-info">
+                <h3>Organski Med</h3>
+                <p>Naš organski med je proizveden bez upotrebe pesticida i hemikalija, što garantuje čist i prirodan proizvod. Savršeno za zaslađivanje vaših napitaka ili kao dodatak vašim omiljenim jelima.</p>
+                <p><strong>Cena:</strong> 1000 RSD za 1kg</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Kontaktirajte Nas</h2>
+        <p>Za više informacija o našim proizvodima ili za porudžbine, slobodno nas kontaktirajte:</p>
+        <ul>
+            <li>Email: nem.knezevic@gmail.com</li>
+            <li>Telefon: 0606011669</li>
+            <li>Adresa: Pridvorica, Srbija</li>
+        </ul>
+    </div>
+    <div class="container" id="order">
+        <h2>Porudžbine</h2>
+        <p>Da biste naručili naš organski med, popunite sledeću formu:</p>
+        <form action="/submit_order" method="post">
+            <label for="name">Ime i Prezime:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="address">Adresa:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <label for="quantity">Količina (u kg):</label><br>
+            <input type="number" id="quantity" name="quantity" required><br><br>
+            <input type="submit" value="Naruči">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Porodica Knežević, Pridvorica, Srbija</p>
+    </footer>
+</body>
+</html>
